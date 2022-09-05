@@ -51,4 +51,4 @@ jobs:
           tag_name: ${{ github.ref }}
           name: Release ${{ github.ref }}
           files: |
-            app-release.apk
+            app/build/outputs/apk/**/*.apk
