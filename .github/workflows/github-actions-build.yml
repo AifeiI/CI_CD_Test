@@ -48,7 +48,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          tag_name: ${{ github.ref }}
-          name: Release ${{ github.ref }}
           files: |
             app/build/outputs/apk/**/*.apk
